@@ -25,7 +25,7 @@ contract ADAXToken is  Context, ERC20, ERC20Detailed  {
      */
     
     constructor () public ERC20Detailed(name, symbol, decimals) {
-        _mint(_msgSender(), 10000 * (10 ** uint256(decimals())));
+        _mint(_msgSender(), totalSupply_ * (10 ** uint256(decimals())));
     }
     emit Transfer(address(0), msg.sender, totalSupply_);
   }
