@@ -385,10 +385,13 @@ contract MyERC20 is IERC20 {
 }
 
 contract ADAX is MyERC20 {
-  string public constant name = "ADAXToken"; 
-  string public constant symbol = "ADXT"; 
-  uint8 public constant decimals = 18;
-  
-  uint256 public constant INITIAL_SUPPLY = 777644156 * (10 ** uint256(decimals));
 
+      constructor() public {
+      _name = "ADAXToken"; 
+      _symbol = "ADXT"; 
+      _decimals = 18;
+      _totalSupply = 777644156 * (10 ** uint256(decimals));
+
+      _mint(msg.sender, _totalSupply);
+  }
 }
