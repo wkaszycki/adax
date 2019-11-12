@@ -1,2 +1,2 @@
 # adax
-This repository containt AdaxTech related files.
+This repository contains AdaxTech related files.
