@@ -386,12 +386,12 @@ contract MyERC20 is IERC20 {
 
 contract ADAX is MyERC20 {
 
-      constructor() public {
-      _name = "ADAXToken"; 
-      _symbol = "ADXT"; 
-      _decimals = 18;
-      _totalSupply = 777644156 * (10 ** uint256(decimals));
+  _name = "ADAX Token"; 
+  _symbol = "ADXT"; 
+  _decimals = 18;
+  _totalSupply = 777644156 * (10 ** uint256(decimals));
 
+  constructor() public {
       _mint(msg.sender, _totalSupply);
   }
 }
